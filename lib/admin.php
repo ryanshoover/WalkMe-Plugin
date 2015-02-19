@@ -2,6 +2,8 @@
 
 class WalkMeAdmin extends WalkMe {
 
+	private $url;
+
 	public static function get_instance()
     {
         static $instance = null;
@@ -16,6 +18,8 @@ class WalkMeAdmin extends WalkMe {
 	protected function __construct() {
 
 		parent::get_instance();
+
+		$this->url = plugins_url() . '/walkme/';
 
 		// Add the options page to the Tools menu
 		add_action('admin_menu', array( &$this, 'add_options_page') );
@@ -76,7 +80,7 @@ class WalkMeAdmin extends WalkMe {
 
 		$output .= '<a href="http://www.walkme.com/" target="_blank" >';
 
-		$output .= '<img src="http://www.walkme.com/wp-content/themes/walkme-v3/images_new/logo.png" title="WalkMe Logo">';
+		$output .= '<img src="' . $this->url . 'img/logo.png" title="WalkMe Logo">';
 
 		$output .= '</a>';
 
