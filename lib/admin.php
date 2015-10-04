@@ -15,6 +15,13 @@ class WalkMeAdmin extends WalkMe {
         return $instance;
     }
 
+    private function __clone(){
+    }
+
+    
+    private function __wakeup(){
+    }
+
 	protected function __construct() {
 
 		parent::get_instance();
@@ -27,13 +34,6 @@ class WalkMeAdmin extends WalkMe {
 		// Create the form on the options page
 		add_action( 'admin_init', array( &$this, 'register_walkme_settings' ) );
 	}
-
-	private function __clone(){
-    }
-
-    
-    private function __wakeup(){
-    }
 
 	/*
 	 * Adds the metabox to post and page edit screens 

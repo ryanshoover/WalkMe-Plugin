@@ -6,8 +6,9 @@ class WalkMe {
 
         static $instance = null;
 
-        if ( null === $instance )
+        if ( null === $instance ) {
 			$instance = new static();
+        }
 
         return $instance;
     }
@@ -35,8 +36,9 @@ class WalkMe {
 
 		$walkme_code = get_option( 'walkme-code' );
 
-		if( !empty( $walkme_code ) )
+		if( !empty( $walkme_code ) ) {
 			echo $walkme_code;
+		}
 
 	}
 

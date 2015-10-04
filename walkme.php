@@ -14,9 +14,11 @@ $path = plugin_dir_path( __FILE__ );
 require_once( $path . 'lib/walkme_class.php' );
 require_once( $path . 'lib/admin.php' );
 
-if( class_exists( 'WalkMe' ) )
+if( class_exists( 'WalkMe' ) ) {
 	$walkme = WalkMe::get_instance();
+}
 
-if( class_exists( 'WalkMeAdmin' ) )
+if( class_exists( 'WalkMeAdmin' ) ) {
 	$walkme_admin = WalkMeAdmin::get_instance();
+}
 
