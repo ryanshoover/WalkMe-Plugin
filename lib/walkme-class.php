@@ -4,21 +4,21 @@ class WalkMe {
 
 	public static function get_instance() {
 
-        static $instance = null;
+		static $instance = null;
 
-        if ( null === $instance ) {
+		if ( null === $instance ) {
 			$instance = new static();
-        }
+		}
 
-        return $instance;
-    }
+		return $instance;
+	}
 
 	private function __clone(){
-    }
+	}
 
-    
-    private function __wakeup(){
-    }
+
+	private function __wakeup(){
+	}
 
 	protected function __construct() {
 
@@ -36,11 +36,11 @@ class WalkMe {
 
 		$walkme_code = get_option( 'walkme-code' );
 
-		if( !empty( $walkme_code ) ) {
+		if ( ! empty( $walkme_code ) ) {
 			echo $walkme_code;
 		}
 
 	}
 
-	
+
 }
