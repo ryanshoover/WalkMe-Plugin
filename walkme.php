@@ -4,7 +4,7 @@
 Plugin Name: Walk Me
 Plugin URI: http://drunkencoding.us
 Description: Provides easy integration between the Walk Me service and WordPress
-Version: 1.0
+Version: 1.0.1
 Author: Ryan Hoover
 Author URI: http://ryan.hoover.ws
 */

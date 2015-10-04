@@ -2,12 +2,12 @@
 Contributors: ryanshoover, cousett
 Tags: WalkMe, eLearning
 Requires at least: 3.5
-Tested up to: 4.1
+Tested up to: 4.3.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin provides a simple management page for adding WalkMe code into a WordPress site. 
+This plugin provides a simple management page for adding WalkMe code into a WordPress site.
 
 == Description ==
 
@@ -19,9 +19,12 @@ Just create your WalkMe™ walkthrough, publish that walkthrough, grab the code 
 
 You'll put WalkMe's JavaScript code into the plugin settings. The plugin will then get the content for your walkthrough from the WalkMe™ service and include it in your site.
 
-WalkMe™ enables your business to simplify the online experience and eliminate user confusion.Think of it like a GPS, but instead of giving driving directions, WalkMe™ guides users every step of the way to successfully complete their online tasks.
+WalkMe™ enables your business to simplify the online experience and eliminate user confusion.
 
-A full description of the service is available at http://www.walkme.com/
+Think of it like a GPS, but instead of giving driving directions, WalkMe™ guides users every step of the way to successfully complete their online tasks.
+
+A full description of the service is available at http://www.walkme.com/
+
 == Installation ==
 
 1. Upload the `walkme` folder to the `/wp-content/plugins/` directory
@@ -33,5 +36,6 @@ A full description of the service is available at http://www.walkme.com/
 7. The WalkMe addon should now be included on your website.
 
 == Changelog ==
+1.0.1 Update code standards and stable tag
 
 1.0 Initial release
